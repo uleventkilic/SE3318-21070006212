@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.List;
+import java.util.Arrays;
 
 public class App {
     public static void main(String[] args) {
@@ -31,7 +32,7 @@ public class App {
         System.out.println("Students in Gryffindor: " + classRoom.getStudentsByHouse("Gryffindor"));
         System.out.println("Students sorted by house: " + classRoom.getStudentsSortedByHouse());
 
-        WizardExam exam = new WizardExam(List.of("Expelliarmus", "Lumos"));
+        WizardExam exam = new WizardExam(Arrays.asList("Expelliarmus", "Lumos"));
         exam.evaluate(harry);
         exam.evaluate(luna);
 
